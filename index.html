@@ -1,72 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- =============== FAVICON ================== -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
+		<!-- =============== FAVICON ================== -->
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.png"
+			type="image/x-icon"
+		/>
 
-    <!-- =============== REMIX ICONS =============== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+		<!-- =============== REMIX ICONS =============== -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 
-    <!-- ================== CSS ================ -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+		<!-- ================== CSS ================ -->
+		<link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Beats Headphones</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-      <!-- ========== MARQUEE HEADER TEXT ============ -->
-      <marquee behavior="scroll" direction="left"
-        ><h3 class="marquee__title">Beats Headphones</h3></marquee
-      >
+		<title>Beats Headphones</title>
+	</head>
+	<body>
+		<!-- ========== MARQUEE HEADER TEXT ============ -->
+		<marquee behavior="scroll" direction="left"
+			><h3 class="marquee__title">
+				Beats Headphones - Beats was established in 2006 by music producer Dr.
+				Dre and record company executive Jimmy Iovine
+			</h3></marquee
+		>
+		<!--=============== HEADER ===============-->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">
+					<img src="assets/img/logo.png" alt="" />MARU
+				</a>
 
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img src="assets/img/logo.png" alt="" />MARU
-        </a>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#specs" class="nav__link">Specs</a>
+						</li>
+						<li class="nav__item">
+							<a href="#case" class="nav__link">Case</a>
+						</li>
+						<li class="nav__item">
+							<a href="#products" class="nav__link">Products</a>
+						</li>
+					</ul>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#specs" class="nav__link">Specs</a>
-            </li>
-            <li class="nav__item">
-              <a href="#case" class="nav__link">Case</a>
-            </li>
-            <li class="nav__item">
-              <a href="#products" class="nav__link">Products</a>
-            </li>
-          </ul>
+					<div class="nav__close" id="nav-close">
+						<i class="ri-close-line"></i>
+					</div>
+				</div>
 
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
-        </div>
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-function-line"></i>
+				</div>
+			</nav>
+		</header>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-function-line"></i>
-        </div>
-      </nav>
-    </header>
+		<!-- =========== MAIN ============ -->
+		<main class="main">
+			<!--=============== HOME ===============-->
+			<section class="home section" id="home">
+				<div class="home__container container grid">
+					<div>
+						<img src="assets/img/home.png" alt="" class="home__img" />
+					</div>
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+					<div class="home__data">
+						<div class="home__header">
+							<h1 class="home__title">On ear</h1>
+							<h2 class="home__subtitle">Beats 3</h2>
+						</div>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+						<div class="home__footer">
+							<h3 class="home__title-description">Overview</h3>
+							<p class="home__description">
+								Enjoy award-winning Beats sound with wireless listening freedom
+								and a sleek,streamlined design with comfortable padded
+								earphones, delivering first-rate playback.
+							</p>
+
+							<a href="#" class="button button--flex">
+								<span class="button--flex">
+									<i class="ri-shopping-bag-line button__icon"></i> Add to Bag
+								</span>
+
+								<span class="home__price">$299</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--=============== SPONSOR ===============-->
+			<section class="sponsor section">
+				<div class="sponsor__container container grid">
+					<img
+						src="assets/img/sponsor1.png"
+						alt="sponsor image"
+						class="sponsor__img"
+					/>
+					<img
+						src="assets/img/sponsor2.png"
+						alt="sponsor image"
+						class="sponsor__img"
+					/>
+					<img
+						src="assets/img/sponsor3.png"
+						alt="sponsor image"
+						class="sponsor__img"
+					/>
+					<img
+						src="assets/img/sponsor4.png"
+						alt="sponsor image"
+						class="sponsor__img"
+					/>
+				</div>
+			</section>
+		</main>
+
+		<!--=============== SCROLL REVEAL ===============-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		<!--=============== MAIN JS ===============-->
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
