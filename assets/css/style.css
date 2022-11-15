@@ -29,7 +29,7 @@
 	--normal-font-size: 0.938rem;
 	--small-font-size: 0.813rem;
 	--smaller-font-size: 0.75rem;
-	--text-line-height: 2rem;
+	--text-line-height: 1.7rem;
 	/*========== Font weight ==========*/
 	--font-medium: 500;
 	--font-semi-bold: 600;
@@ -114,7 +114,7 @@ img {
 .section__title {
 	font-size: var(--bigger-font-size);
 	text-align: center;
-	margin-bottom: var(--mb-2-5);
+	margin-bottom: var(--mb-2);
 }
 
 .section__title-gradient {
@@ -210,10 +210,19 @@ img {
 	color: var(--white-color);
 }
 
+.nav__toggle {
+	cursor: pointer;
+}
+
+.nav__toggle i {
+	font-size: 1.5rem;
+}
+
 .nav__close {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
+	cursor: pointer;
 }
 
 .nav__close i {
@@ -234,7 +243,7 @@ img {
 .home__img {
 	width: 250px;
 	position: absolute;
-	top: -16rem;
+	top: -17rem;
 	right: 3rem;
 }
 
@@ -351,4 +360,26 @@ img {
 	top: 2rem;
 	left: 8rem;
 	/* right: -4rem; */
+}
+
+/* ============ CASE ============ */
+.case__container {
+	position: relative;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.case__img {
+	width: 250px;
+	position: absolute;
+	top: 0;
+	left: -7rem;
+}
+
+.case__data {
+	padding: 4rem 0 3rem;
+}
+
+.case__description {
+	margin-bottom: var(--mb-1-5);
+	line-height: var(--text-line-height);
 }
