@@ -383,3 +383,27 @@ img {
 	margin-bottom: var(--mb-1-5);
 	line-height: var(--text-line-height);
 }
+
+/* ============ DISCOUNT =========== */
+.discount__container {
+	position: relative;
+	background-color: var(--container-color);
+	padding: 2rem 1.5rem;
+	border-radius: 0.75rem;
+}
+
+.discount__img {
+	width: 400px;
+	position: absolute;
+	top: 4rem;
+	right: -11rem;
+}
+
+.discount__title {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-0-75);
+}
+
+.discount__description {
+	margin-bottom: var(--mb-1);
+}
