@@ -125,10 +125,7 @@ img {
 }
 
 .marquee__title {
-	background: var(--text-gradient);
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
+	color: var(--white-color);
 }
 
 /*=============== LAYOUT ===============*/
@@ -153,6 +150,7 @@ img {
 	top: 0;
 	left: 0;
 	z-index: var(--z-fixed);
+	transition: 0.3s;
 }
 
 .nav {
@@ -225,6 +223,11 @@ img {
 /* ===== Show Menu ===== */
 .show-menu {
 	top: 0;
+}
+
+/* Change background header */
+.scroll-header {
+	background-color: var(--body-color);
 }
 
 /* ========== HOME ========== */
@@ -308,4 +311,44 @@ img {
 	grid-template-columns: repeat(2, max-content);
 	gap: 4rem;
 	place-content: center;
+}
+
+/* ============= SPECS ============== */
+.specs__container {
+	position: relative;
+}
+
+.specs__content {
+	row-gap: 1.5rem;
+}
+
+.specs__data {
+	display: inherit;
+	row-gap: 0.25rem;
+}
+
+.specs__icon {
+	font-size: 1.25rem;
+	color: var(--white-color);
+}
+
+.specs__title {
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-medium);
+}
+
+.specs__subtitle {
+	font-size: var(--smaller-font-size);
+}
+
+.specs__data:nth-child(3n + 1) {
+	margin-left: var(--mb-1-5);
+}
+
+.specs__img {
+	width: 250px;
+	position: absolute;
+	top: 2rem;
+	left: 8rem;
+	/* right: -4rem; */
 }
