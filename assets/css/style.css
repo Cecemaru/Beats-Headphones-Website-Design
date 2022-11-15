@@ -407,3 +407,46 @@ img {
 .discount__description {
 	margin-bottom: var(--mb-1);
 }
+
+/* ========== PRODUCTS =========== */
+.product__container {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5rem 1.5rem;
+	padding-top: 2rem;
+}
+
+.products__card {
+	position: relative;
+	height: 132px;
+	display: grid;
+	background-color: var(--container-color);
+	padding: 0.75rem;
+	border-radius: 0.5rem;
+}
+
+.products__content {
+	align-self: flex-end;
+}
+
+.products__img {
+	width: 80px;
+	position: absolute;
+	top: -3rem;
+}
+
+.products__title,
+.products__price {
+	font-size: var(--small-font-size);
+}
+
+.products__price {
+	font-weight: var(--font-semi-bold);
+}
+
+.products__button {
+	position: absolute;
+	right: 0.5rem;
+	bottom: 0.4rem;
+	padding: 0.6rem;
+	border-radius: 0.75rem;
+}
